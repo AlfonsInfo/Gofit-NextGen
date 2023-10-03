@@ -18,10 +18,4 @@ public class NextgenApplication {
 		SpringApplication.run(NextgenApplication.class, args);
 	}
 
-//	@EventListener(ApplicationReadyEvent.class)
-//	public void sendEmail() throws MessagingException {
-//		emailSenderService.sendEmail("alvonsus.setiawan@gmail.com",
-//				"New Member Email"
-//		, "<h1>Welcome new member!!!</h1>");
-//	}
 }

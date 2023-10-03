@@ -10,6 +10,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 
+import java.io.UnsupportedEncodingException;
+
 @SpringBootTest
 public class EmailSenderServiceTesting {
 
@@ -20,7 +22,7 @@ public class EmailSenderServiceTesting {
     private JavaMailSender javaMailSender; // Inject the configured JavaMailSender
 
     @Test
-    public void sendEmail() throws MessagingException {
+    public void sendEmail() throws MessagingException, UnsupportedEncodingException {
         emailSenderService.sendEmail("alvonsus.setiawan@gmail.com",
                 "New Member Email",
                 "<html><body><h1>Welcome new member!!!</h1></body></html>");
