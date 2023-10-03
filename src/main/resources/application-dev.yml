@@ -4,8 +4,17 @@ spring:
     username: postgres
     password: password
     type: com.zaxxer.hikari.HikariDataSource
-
-
+  mail:
+    host: smtp.gmail.com
+    username: itsmealfons@gmail.com
+    password: aejgiwolrsvaaicd
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 info:
   app:
     name: Gofit
@@ -23,3 +32,4 @@ management:
         include: "*"
         exclude:
           - health
+
