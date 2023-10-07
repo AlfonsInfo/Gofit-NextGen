@@ -18,7 +18,7 @@ spring:
 info:
   app:
     name: Gofit
-    description: Service for fitnes center management
+    description: Service for fitness center management
     version: 0.0.1
 
 server:
