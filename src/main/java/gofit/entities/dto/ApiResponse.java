@@ -9,8 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ApiResponse <T>{
-    private T responseData;
+public class ApiResponse{
     private ErrorSchema errorSchema;
 
 }
